@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\login2\login2\bin\Debug\login register.exe.config
+C:\Users\PC\source\repos\login2\login2\bin\Debug\login register.exe
+C:\Users\PC\source\repos\login2\login2\bin\Debug\login register.pdb
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.Properties.Resources.resources
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login register.exe
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login register.pdb
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.login3.resources
+C:\Users\PC\source\repos\login2\login2\obj\Debug\login2.aplication.resources
