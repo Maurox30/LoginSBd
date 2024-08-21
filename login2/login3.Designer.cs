@@ -84,6 +84,10 @@
             this.sesion_cartel = new System.Windows.Forms.Label();
             this.r_cartel = new System.Windows.Forms.Label();
             this.r_error_nombre = new System.Windows.Forms.Label();
+            this.r_error_apellido = new System.Windows.Forms.Label();
+            this.r_error_usuario = new System.Windows.Forms.Label();
+            this.r_error_pass = new System.Windows.Forms.Label();
+            this.r_btn_pw = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -592,19 +596,69 @@
             // 
             this.r_error_nombre.AutoSize = true;
             this.r_error_nombre.BackColor = System.Drawing.Color.Firebrick;
-            this.r_error_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.r_error_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.r_error_nombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.r_error_nombre.Location = new System.Drawing.Point(568, 92);
             this.r_error_nombre.Name = "r_error_nombre";
-            this.r_error_nombre.Size = new System.Drawing.Size(204, 15);
+            this.r_error_nombre.Size = new System.Drawing.Size(183, 13);
             this.r_error_nombre.TabIndex = 55;
             this.r_error_nombre.Text = "El campo no puede estar vacio";
+            // 
+            // r_error_apellido
+            // 
+            this.r_error_apellido.AutoSize = true;
+            this.r_error_apellido.BackColor = System.Drawing.Color.Firebrick;
+            this.r_error_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.r_error_apellido.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.r_error_apellido.Location = new System.Drawing.Point(568, 134);
+            this.r_error_apellido.Name = "r_error_apellido";
+            this.r_error_apellido.Size = new System.Drawing.Size(183, 13);
+            this.r_error_apellido.TabIndex = 56;
+            this.r_error_apellido.Text = "El campo no puede estar vacio";
+            // 
+            // r_error_usuario
+            // 
+            this.r_error_usuario.AutoSize = true;
+            this.r_error_usuario.BackColor = System.Drawing.Color.Firebrick;
+            this.r_error_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.r_error_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.r_error_usuario.Location = new System.Drawing.Point(584, 180);
+            this.r_error_usuario.Name = "r_error_usuario";
+            this.r_error_usuario.Size = new System.Drawing.Size(183, 13);
+            this.r_error_usuario.TabIndex = 57;
+            this.r_error_usuario.Text = "El campo no puede estar vacio";
+            // 
+            // r_error_pass
+            // 
+            this.r_error_pass.AutoSize = true;
+            this.r_error_pass.BackColor = System.Drawing.Color.Firebrick;
+            this.r_error_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.r_error_pass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.r_error_pass.Location = new System.Drawing.Point(615, 233);
+            this.r_error_pass.Name = "r_error_pass";
+            this.r_error_pass.Size = new System.Drawing.Size(183, 13);
+            this.r_error_pass.TabIndex = 58;
+            this.r_error_pass.Text = "El campo no puede estar vacio";
+            // 
+            // r_btn_pw
+            // 
+            this.r_btn_pw.Location = new System.Drawing.Point(578, 227);
+            this.r_btn_pw.Name = "r_btn_pw";
+            this.r_btn_pw.Size = new System.Drawing.Size(38, 25);
+            this.r_btn_pw.TabIndex = 59;
+            this.r_btn_pw.Text = "ver";
+            this.r_btn_pw.UseVisualStyleBackColor = true;
+            this.r_btn_pw.Click += new System.EventHandler(this.button1_Click);
             // 
             // login3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.r_btn_pw);
+            this.Controls.Add(this.r_error_pass);
+            this.Controls.Add(this.r_error_usuario);
+            this.Controls.Add(this.r_error_apellido);
             this.Controls.Add(this.r_error_nombre);
             this.Controls.Add(this.r_cartel);
             this.Controls.Add(this.sesion_cartel);
@@ -729,6 +783,10 @@
         private System.Windows.Forms.Label sesion_cartel;
         private System.Windows.Forms.Label r_cartel;
         private System.Windows.Forms.Label r_error_nombre;
+        private System.Windows.Forms.Label r_error_apellido;
+        private System.Windows.Forms.Label r_error_usuario;
+        private System.Windows.Forms.Label r_error_pass;
+        private System.Windows.Forms.Button r_btn_pw;
     }
 }
 

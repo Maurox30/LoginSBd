@@ -16,6 +16,10 @@ namespace login2
             sesion_cartel.Visible = false;
             r_cartel.Visible = false;
             r_error_nombre.Visible = false;
+            r_error_apellido.Visible = false;
+            r_error_pass.Visible = false;  
+            r_error_usuario.Visible = false;
+           
 
         }
 
@@ -26,13 +30,26 @@ namespace login2
 
         private void registrar_btn_Click(object sender, EventArgs e)
         {
-            if (r_nombre.Text == "")
+            r_error_nombre.Visible = false;
+            r_error_apellido.Visible = false;
+            r_error_pass.Visible = false;
+            r_error_usuario.Visible = false;
+            r_btn_pw.Visible = false;
+
+            if (r_nombre.Text == "" || r_apellido.Text=="" || r_user.Text=="" || r_pw.Text=="")
             {
-                r_error_nombre.Visible = true;
+                if (r_nombre.Text == "") { r_error_nombre.Visible = true; }
+                if (r_apellido.Text == "") { r_error_apellido.Visible = true; }
+                if (r_user.Text == "") { r_error_usuario.Visible = true; }
+                if (r_pw.Text == "") {
+                    r_error_pass.Visible = true;
+                }
+                else { r_btn_pw.Visible= true; }
+
             }
             else
             {
-                r_error_nombre.Visible = false;
+                //r_error_nombre.Visible = false;
                 u1.Register(r_nombre.Text, r_apellido.Text, r_user.Text, r_pw.Text);
                 r_cartel.Visible = true;
                 r_nombre.Clear();
@@ -48,7 +65,7 @@ namespace login2
             if (validate)
             {
                 this.Hide();
-                aplication aplicacion = new aplication();
+                aplication aplicacion = new aplication(u1);
                 aplicacion.Show();
                 aplicacion.FormClosed += CloseForm;
             }
@@ -67,6 +84,11 @@ namespace login2
             Sesion_u.Text = "";
             Sesion_pw.Text = "";
             Sesion_u.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            r_pw.UseSystemPasswordChar = false;
         }
     }
 }

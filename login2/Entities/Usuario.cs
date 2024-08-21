@@ -1,6 +1,6 @@
 ﻿namespace login2.Entities
 {
-    internal class Usuario
+    public class Usuario
     {
         private string name;
         private string lastname;
